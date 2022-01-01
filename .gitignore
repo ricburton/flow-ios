@@ -1,9 +1,6 @@
-# Mac OS X
+# OS X temporary files
 .DS_Store
+.Trashes
 
-.build/
-.idea/
-Pods/
-.DS_Store
-
-/Design
+# Locals
+/Design/*
