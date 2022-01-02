@@ -12,15 +12,15 @@ let package = Package(
         .library(name: "AppImport", targets: ["AppImport"]),
     ],
     dependencies: [
-        .package(name: "SparrowKit", url: "https://github.com/ivanvorobei/SparrowKit", .upToNextMajor(from: "3.4.8")),
-        .package(name: "NativeUIKit", url: "https://github.com/ivanvorobei/NativeUIKit", .upToNextMajor(from: "1.2.1")),
         .package(name: "SPAlert", url: "https://github.com/ivanvorobei/SPAlert", .upToNextMajor(from: "3.4.1")),
         .package(name: "SPIndicator", url: "https://github.com/ivanvorobei/SPIndicator", .upToNextMajor(from: "1.6.0")),
-        .package(name: "SPDiffable", url: "https://github.com/ivanvorobei/SPDiffable", .upToNextMajor(from: "2.2.0")),
         .package(name: "Alamofire", url: "https://github.com/Alamofire/Alamofire", .upToNextMajor(from: "5.4.4")),
         .package(name: "SwiftyJSON", url: "https://github.com/SwiftyJSON/SwiftyJSON", .upToNextMajor(from: "5.0.1")),
         .package(name: "Nuke", url: "https://github.com/kean/Nuke", .upToNextMajor(from: "10.5.2")),
         .package(name: "Models", path: "Models"),
+        .package(name: "SPDiffable", path: "SPDiffable"),
+        .package(name: "NativeUIKit", path: "NativeUIKit"),
+        .package(name: "SparrowKit", path: "SparrowKit"),
         .package(name: "Constants", path: "Constants")
     ],
     targets: [

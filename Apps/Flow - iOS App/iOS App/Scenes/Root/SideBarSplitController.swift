@@ -23,7 +23,7 @@ class SideBarSplitController: UISplitViewController {
             preferredPrimaryColumnWidth = Layout.Sizes.Controller.split_side_bar_preferred_width
         }
         
-        setViewController(Navigation.compactRootController, for: .compact)
+        setViewController(Navigation.compactRootController.wrapToNavigationController(prefersLargeTitles: true), for: .compact)
     }
     
     required init?(coder: NSCoder) {

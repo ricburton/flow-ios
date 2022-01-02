@@ -15,11 +15,11 @@ enum Controllers {
     
     enum Storage {
         
-        static var main: UIViewController { SPController() }
+        static var main: UIViewController { StorageController() }
     }
     
     enum Settings {
         
-        static var main: UIViewController { SPController() }
+        static var main: UIViewController { SettingsController() }
     }
 }

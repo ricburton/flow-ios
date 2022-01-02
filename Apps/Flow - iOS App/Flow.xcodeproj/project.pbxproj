@@ -33,6 +33,19 @@
 		F429E2FA2780CDED00636A50 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429E2F02780CDED00636A50 /* Controllers.swift */; };
 		F429E2FC2780CF5A00636A50 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429E2FB2780CF5A00636A50 /* Layout.swift */; };
 		F456B8EC276A5E1D00B2B6A3 /* AppImport in Frameworks */ = {isa = PBXBuildFile; productRef = F456B8EB276A5E1D00B2B6A3 /* AppImport */; };
+		F45A161F2781D37900E1A96A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45A161E2781D37900E1A96A /* HomeController.swift */; };
+		F45A16212781D45100E1A96A /* HeaderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45A16202781D45100E1A96A /* HeaderHomeView.swift */; };
+		F48654C22781DF0400A233FB /* Texts+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654C12781DF0400A233FB /* Texts+Storage.swift */; };
+		F48654C42781DF5600A233FB /* Texts+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654C32781DF5600A233FB /* Texts+Settings.swift */; };
+		F48654C62781DFB300A233FB /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654C52781DFB300A233FB /* TrackTableViewCell.swift */; };
+		F48654C92781DFD200A233FB /* SPDiffableTableCellProvider+Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654C82781DFD200A233FB /* SPDiffableTableCellProvider+Track.swift */; };
+		F48654CB2781E00100A233FB /* TrackTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654CA2781E00100A233FB /* TrackTableRow.swift */; };
+		F48654CE2781F43300A233FB /* Texts+Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654CD2781F43300A233FB /* Texts+Library.swift */; };
+		F48654D02782081500A233FB /* PlaylistCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654CF2782081500A233FB /* PlaylistCollectionView.swift */; };
+		F48654D22782090800A233FB /* PlaylistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654D12782090800A233FB /* PlaylistCollectionViewCell.swift */; };
+		F48654D527820D6E00A233FB /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654D427820D6E00A233FB /* SettingsController.swift */; };
+		F48654D827820D9C00A233FB /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654D727820D9C00A233FB /* StorageController.swift */; };
+		F48654DA27820DBA00A233FB /* Presenter+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48654D927820DBA00A233FB /* Presenter+App.swift */; };
 		F4AAB05E276A5B6A00C8C60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AAB058276A5B6A00C8C60B /* AppDelegate.swift */; };
 		F4AAB05F276A5B6A00C8C60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AAB05A276A5B6A00C8C60B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -65,6 +78,22 @@
 		F429E2ED2780CDED00636A50 /* BarUsage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarUsage.swift; sourceTree = "<group>"; };
 		F429E2F02780CDED00636A50 /* Controllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
 		F429E2FB2780CF5A00636A50 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		F45A161E2781D37900E1A96A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		F45A16202781D45100E1A96A /* HeaderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHomeView.swift; sourceTree = "<group>"; };
+		F45A16292781D75E00E1A96A /* SparrowKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SparrowKit; path = ../../../../Projects/GitHub/SparrowKit; sourceTree = "<group>"; };
+		F45A162A2781D75E00E1A96A /* NativeUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NativeUIKit; path = ../../../../Projects/GitHub/NativeUIKit; sourceTree = "<group>"; };
+		F48654C12781DF0400A233FB /* Texts+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Texts+Storage.swift"; sourceTree = "<group>"; };
+		F48654C32781DF5600A233FB /* Texts+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Texts+Settings.swift"; sourceTree = "<group>"; };
+		F48654C52781DFB300A233FB /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		F48654C82781DFD200A233FB /* SPDiffableTableCellProvider+Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SPDiffableTableCellProvider+Track.swift"; sourceTree = "<group>"; };
+		F48654CA2781E00100A233FB /* TrackTableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableRow.swift; sourceTree = "<group>"; };
+		F48654CC2781F0D000A233FB /* SPDiffable */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SPDiffable; path = ../../../../Projects/GitHub/SPDiffable; sourceTree = "<group>"; };
+		F48654CD2781F43300A233FB /* Texts+Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Texts+Library.swift"; sourceTree = "<group>"; };
+		F48654CF2782081500A233FB /* PlaylistCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCollectionView.swift; sourceTree = "<group>"; };
+		F48654D12782090800A233FB /* PlaylistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCollectionViewCell.swift; sourceTree = "<group>"; };
+		F48654D427820D6E00A233FB /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		F48654D727820D9C00A233FB /* StorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
+		F48654D927820DBA00A233FB /* Presenter+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+App.swift"; sourceTree = "<group>"; };
 		F4AAB03B276A5AAB00C8C60B /* Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AAB058276A5B6A00C8C60B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4AAB05A276A5B6A00C8C60B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				F429E2C92780CCEA00636A50 /* Texts.swift */,
+				F48654C12781DF0400A233FB /* Texts+Storage.swift */,
+				F48654CD2781F43300A233FB /* Texts+Library.swift */,
+				F48654C32781DF5600A233FB /* Texts+Settings.swift */,
 			);
 			path = Texts;
 			sourceTree = "<group>";
@@ -145,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				F429E2E62780CDED00636A50 /* Presenter.swift */,
+				F48654D927820DBA00A233FB /* Presenter+App.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -184,9 +217,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F45A161D2781D37100E1A96A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F45A161E2781D37900E1A96A /* HomeController.swift */,
+				F45A16202781D45100E1A96A /* HeaderHomeView.swift */,
+				F48654CF2782081500A233FB /* PlaylistCollectionView.swift */,
+				F48654D12782090800A233FB /* PlaylistCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F48654C72781DFC500A233FB /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				F48654C52781DFB300A233FB /* TrackTableViewCell.swift */,
+				F48654C82781DFD200A233FB /* SPDiffableTableCellProvider+Track.swift */,
+				F48654CA2781E00100A233FB /* TrackTableRow.swift */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		F48654D327820D6400A233FB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F48654D427820D6E00A233FB /* SettingsController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F48654D627820D9300A233FB /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				F48654D727820D9C00A233FB /* StorageController.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		F4AAB032276A5AAB00C8C60B = {
 			isa = PBXGroup;
 			children = (
+				F48654CC2781F0D000A233FB /* SPDiffable */,
+				F45A162A2781D75E00E1A96A /* NativeUIKit */,
+				F45A16292781D75E00E1A96A /* SparrowKit */,
 				F429E2B82780CB2A00636A50 /* Constants */,
 				F429E2B52780CADE00636A50 /* Models */,
 				F4AAB064276A5DA200C8C60B /* AppImport */,
@@ -232,6 +305,7 @@
 		F4AAB055276A5B6A00C8C60B /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				F48654C72781DFC500A233FB /* Track */,
 				F429E2FB2780CF5A00636A50 /* Layout.swift */,
 			);
 			path = Interface;
@@ -270,6 +344,9 @@
 		F4AAB05C276A5B6A00C8C60B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F48654D627820D9300A233FB /* Storage */,
+				F48654D327820D6400A233FB /* Settings */,
+				F45A161D2781D37100E1A96A /* Home */,
 				F429E2DB2780CD9700636A50 /* Root */,
 			);
 			path = Scenes;
@@ -359,27 +436,40 @@
 				F429E2F32780CDED00636A50 /* Presenter.swift in Sources */,
 				F429E2C52780CCA700636A50 /* SettingsSceneDelegate.swift in Sources */,
 				F429E2C72780CCB700636A50 /* StorageSceneDelegate.swift in Sources */,
+				F48654D02782081500A233FB /* PlaylistCollectionView.swift in Sources */,
 				F429E2BE2780CC0100636A50 /* SceneUserActivity.swift in Sources */,
 				F429E2CD2780CD0D00636A50 /* Images.swift in Sources */,
 				F429E2FC2780CF5A00636A50 /* Layout.swift in Sources */,
+				F48654CE2781F43300A233FB /* Texts+Library.swift in Sources */,
 				F429E2F72780CDED00636A50 /* BarSectionModel.swift in Sources */,
 				F429E2BC2780CBF600636A50 /* Notifications.swift in Sources */,
 				F429E2F52780CDED00636A50 /* Navigation.swift in Sources */,
 				F429E2B72780CB1A00636A50 /* UISceneConfiguration+Scene.swift in Sources */,
+				F48654CB2781E00100A233FB /* TrackTableRow.swift in Sources */,
 				F429E2F42780CDED00636A50 /* Navigation+Cache.swift in Sources */,
+				F48654C92781DFD200A233FB /* SPDiffableTableCellProvider+Track.swift in Sources */,
 				F429E2DF2780CDA500636A50 /* SidebarController.swift in Sources */,
 				F429E2C42780CCA700636A50 /* BaseSceneDelegate.swift in Sources */,
+				F48654DA27820DBA00A233FB /* Presenter+App.swift in Sources */,
 				F4AAB05E276A5B6A00C8C60B /* AppDelegate.swift in Sources */,
 				F429E2E12780CDBF00636A50 /* CompactRootController.swift in Sources */,
+				F48654C62781DFB300A233FB /* TrackTableViewCell.swift in Sources */,
 				F429E2BA2780CB5500636A50 /* ConstantsExtension.swift in Sources */,
+				F48654C22781DF0400A233FB /* Texts+Storage.swift in Sources */,
 				F429E2CA2780CCEA00636A50 /* Texts.swift in Sources */,
+				F48654C42781DF5600A233FB /* Texts+Settings.swift in Sources */,
 				F429E2DD2780CD9A00636A50 /* SideBarSplitController.swift in Sources */,
 				F429E2F12780CDED00636A50 /* UserSettings.swift in Sources */,
+				F45A161F2781D37900E1A96A /* HomeController.swift in Sources */,
 				F429E2C32780CCA700636A50 /* RootSceneDelegate.swift in Sources */,
 				F429E2FA2780CDED00636A50 /* Controllers.swift in Sources */,
 				F429E2F82780CDED00636A50 /* BarUsage.swift in Sources */,
 				F429E2CF2780CD3400636A50 /* UIImageExtension.swift in Sources */,
+				F48654D527820D6E00A233FB /* SettingsController.swift in Sources */,
+				F45A16212781D45100E1A96A /* HeaderHomeView.swift in Sources */,
+				F48654D22782090800A233FB /* PlaylistCollectionViewCell.swift in Sources */,
 				F429E2F62780CDED00636A50 /* BarRowModel.swift in Sources */,
+				F48654D827820D9C00A233FB /* StorageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

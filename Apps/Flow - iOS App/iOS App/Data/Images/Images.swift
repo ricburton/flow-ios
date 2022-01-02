@@ -11,6 +11,7 @@ enum Images {
         
         static var add: UIImage { .system("plus") }
         static var add_circle: UIImage { .system("plus.circle") }
+        static var add_circle_fill: UIImage { .system("plus.circle.fill") }
         static var add_rectangle: UIImage { .system("plus.rectangle") }
         static var edit: UIImage { .system("pencil") }
         static var delete: UIImage { .system("trash") }
@@ -26,5 +27,8 @@ enum Images {
         static var close_app: UIImage { .system("xmark.app.fill") }
         static var close_square: UIImage { .system("xmark.square.fill") }
         static var delete: UIImage { .system("trash.fill") }
+        
+        static var storage: UIImage { .system("folder.fill") }
+        static var settings: UIImage { .system("gear") }
     }
 }

@@ -11,7 +11,7 @@ enum Navigation {
     }
     
     static var compactRootController: UIViewController {
-        return CompactRootController()
+        return HomeController()
     }
     
     // MARK: - Bars
