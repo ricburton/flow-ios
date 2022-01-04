@@ -2,7 +2,7 @@ import UIKit
 import SparrowKit
 import SPDiffable
 
-class PlaylistCollectionView: SPDiffableCollectionView {
+class PlaylistCollectionView: SPDiffableCollectionView, SPDiffableCollectionDelegate {
 
     static let itemSize: CGSize = .init(width: 125, height: 145)
     
@@ -24,6 +24,8 @@ class PlaylistCollectionView: SPDiffableCollectionView {
                 return cell
             })
         ], sections: content)
+        
+        diffableDataSource?.diffableDelegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -44,11 +46,18 @@ class PlaylistCollectionView: SPDiffableCollectionView {
         ]
     }
     
+    func diffableCollectionView(_ collectionView: UICollectionView, didSelectItem item: SPDiffableItem, indexPath: IndexPath) {
+        let controller = PlaylistController()
+        viewController?.navigationController?.pushViewController(controller, completion: nil)
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
-        if let superview = superview {
-            layoutMargins.left = superview.layoutMargins.left
-            layoutMargins.right = superview.layoutMargins.right
+        if layout.scrollDirection == .horizontal {
+            if let superview = superview {
+                layoutMargins.left = superview.layoutMargins.left
+                layoutMargins.right = superview.layoutMargins.right
+            }
         }
     }
     

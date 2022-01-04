@@ -30,7 +30,7 @@ class HomeController: NativeHeaderTableController {
         tableView.register(NativeLeftButtonTableViewCell.self)
         tableView.register(TrackTableViewCell.self)
         tableView.register(NativeMenuTableViewCell.self)
-        setCellProviders([.menu, .track, .button], supplementaryProviders: [.largeHeader], sections: content)
+        setCellProviders([.menu, .track, .button], headerFooterProviders: [.largeHeader], sections: content)
     }
     
     // MARK: - Diffable

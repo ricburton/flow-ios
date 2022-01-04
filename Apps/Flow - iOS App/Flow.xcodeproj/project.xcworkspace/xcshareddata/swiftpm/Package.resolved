@@ -16,7 +16,7 @@
         "state": {
           "branch": null,
           "revision": "6be3e778f1663b16dd645b7e8a0a01f73b5ed7f3",
-          "version": "10.5.2"
+          "version": "10.6.1"
         }
       },
       {
@@ -26,15 +26,6 @@
           "branch": null,
           "revision": "52c6fbfd025c8aeb2236c4f629dcca59e0060de6",
           "version": "3.5.1"
-        }
-      },
-      {
-        "package": "SPDiffable",
-        "repositoryURL": "https://github.com/ivanvorobei/SPDiffable",
-        "state": {
-          "branch": null,
-          "revision": "84e69c37fac575a46ed27e4dc95042903b5bf0cd",
-          "version": "2.2.0"
         }
       },
       {

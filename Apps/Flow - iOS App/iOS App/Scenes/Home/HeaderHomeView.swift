@@ -24,6 +24,8 @@ open class HeaderHomeView: SPView {
     
     let playlistCollectionView = PlaylistCollectionView()
     
+    let footerPlaylistView = NativeFooterView(text: "All playlist sync between devices.")
+    
     // MARK: - Private
     
     private var extendView = SPView()
@@ -34,7 +36,7 @@ open class HeaderHomeView: SPView {
         super.commonInit()
         layoutMargins.bottom = NativeLayout.Spaces.default_double
         backgroundColor = .secondarySystemGroupedBackground
-        addSubviews([extendView, addButton, footerAddButton, playlistHeaderView, playlistCollectionView])
+        addSubviews([extendView, addButton, footerAddButton, playlistHeaderView, playlistCollectionView, footerPlaylistView])
     }
     
     // MARK: - Ovveride
@@ -57,20 +59,24 @@ open class HeaderHomeView: SPView {
         playlistHeaderView.layout(y: footerAddButton.frame.maxY + NativeLayout.Spaces.default / 2)
         playlistCollectionView.setWidthAndFit(width: frame.width)
         playlistCollectionView.frame.origin.y = playlistHeaderView.frame.maxY + NativeLayout.Spaces.default_half / 2
+        footerPlaylistView.setWidthAndFit(width: addButton.frame.width)
+        footerPlaylistView.frame.origin.x = addButton.frame.origin.x
+        footerPlaylistView.frame.origin.y = playlistCollectionView.frame.maxY + NativeLayout.Spaces.default_half
         extendView.frame = .init(x: .zero, maxY: .zero, width: frame.width, height: 1000)
 
     }
     
     open override func sizeThatFits(_ size: CGSize) -> CGSize {
         layoutSubviews()
-        return .init(width: frame.width, height: playlistCollectionView.frame.maxY + layoutMargins.bottom)
+        return .init(width: frame.width, height: footerPlaylistView.frame.maxY + layoutMargins.bottom)
     }
     
     // MARK: - Actions
     
     @objc func didTapSeeAllPlaylists() {
         guard let navigationController = self.viewController?.navigationController else { return }
-        Presenter.pushExample(on: navigationController)
+        let controller = PlaylistsController()
+        navigationController.pushViewController(controller)
     }
     
     @objc func didTapImportFiles() {
